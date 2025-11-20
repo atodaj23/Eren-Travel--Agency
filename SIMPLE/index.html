@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eren Travel Agency</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar" style="margin-bottom: 0.1rem;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                 <img src="images/logo.png" class="brand-logo" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <!-- Paketa Turistike dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Paketa turistike</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="paketatTuristike.html#autobus">Guida me autobus</a></li>
+                            <li><a class="dropdown-item" href="paketatTuristike.html#avion">Guida me avion</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="rezervimet.html">Rezervimet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontakti</a>
+                    </li>
+                </ul>  
+            </div>
+        </div>
+    </nav>
+    <!-- Carousel 1 -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner mb-0">
+            <div class="carousel-item active">
+                <img src="images/carousel1.jpg" class="d-block w-100 carousel-img" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/carousel2.jpg" class="d-block w-100 carousel-img" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/carousel3.jpeg" class="d-block w-100 carousel-img" alt="...">
+            </div>
+        </div>
+
+        <div class="carousel-caption custom-caption text-center">
+            <h1 class="display-4 text-white">Gati për aventurën tënde të radhës?</h1>
+            <p class="lead text-white mb-3">Koha për të udhëtuar ndryshe</p>
+
+            <form class="booking-bar d-flex flex-wrap justify-content-center gap-2" id="searchForm">
+                <select class="form-select" id="destinationSelect" style="min-width: 100px;">
+                    <option selected value="">Destinacion</option>
+                </select>
+                <input type="date" class="form-control" placeholder="Data e nisjes" id="departDate">
+                <input type="date" class="form-control" placeholder="Data e kthimit" id="returnDate">
+                <select class="form-select" style="min-width: 100px;">
+                    <option selected>Personat</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4+</option>
+                </select>
+                <button type="submit" class="btn btn-primary">Kerko</button>
+            </form>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Partneret -->
+    <section class="py-3 bg-light">
+        <div class="container-fluid px-0">
+            <div class="d-flex justify-content-between align-items-center flex-wrap" style="gap: 30px;">
+                <div class="col-auto">
+                    <img src="images/partner1.png" class="img-fluid" style="max-height: 25px;" alt="...">
+                </div>
+                <div class="col-auto">
+                    <img src="images/partner2.png" class="img-fluid" style="max-height: 40px;" alt="...">
+                </div>
+                <div class="col-auto">
+                    <img src="images/partner3.png" class="img-fluid" style="max-height: 25px;" alt="...">
+                </div>
+                <div class="col-auto">
+                    <img src="images/partner4.png" class="img-fluid" style="max-height: 25px;" alt="...">
+                </div>
+                <div class="col-auto">
+                    <img src="images/partner5.png" class="img-fluid" style="max-height: 20px;" alt="...">
+                </div>
+                <div class="col-auto">
+                    <img src="images/partner6.png" class="img-fluid" style="max-height: 22px;" alt="...">
+                </div>
+                <div class="col-auto">
+                    <img src="images/partner7.png" class="img-fluid" style="max-height: 25px;" alt="...">
+                </div>
+                <div class="col-auto">
+                    <img src="images/partner8.png" class="img-fluid" style="max-height: 25px;" alt="...">
+                </div>
+                <div class="col-auto">
+                    <img src="images/partner9.png" class="img-fluid" style="max-height: 18px;" alt="...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Oferta -->
+    <section class="py-5 text-white text-center" style="background-color:#0d1b3d;">
+        <div class="container">
+            <h2 class="mb-3 fs-3">Oferta Speciale</h2>
+            <p class="mb-4">Rezervo tani dhe përfito 10% zbritje ekskluzive për klientët e rinj!</p>
+        </div>
+    </section>
+
+    <!-- Festat e fundvitit -->
+    <section class="container py-5">
+        <h2 class="mb-3 fs-3">Festat e fundvitit 2025</h2>
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shadow-sm package-card-no-zoom">
+                        <img src="images/festa1.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h6 class="card-title">Festat e Fundvitit në qytetin e dritave</h6>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card shadow-sm package-card-no-zoom">
+                    <img src="images/festa2.PNG" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h6 class="card-title">Krishtlindje Mesdhetare</h6>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card shadow-sm package-card-no-zoom">
+                    <img src="images/festa3.PNG" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h6 class="card-title">Fshatrat Festive të Alberobellos</h6>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card shadow-sm package-card-no-zoom">
+                    <img src="images/festa4.PNG" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h6 class="card-title">Viti i Ri në Shqipëri</h6>
+                        </div>
+                    </div>
+                </div>
+            <div class="mb-0">
+                <button type="button" class="btn btn-primary btn-sm" onclick="window.location.href='paketatTuristike.html#ofertat-fundvitit'">Shiko të gjitha</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinacionet me te preferuara -->
+    <section class="container py-5">
+        <h2 class="mb-4 fs-3 text-center">Destinacionet më të preferuara</h2>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card shadow-sm package-card-no-zoom">
+                    <img src="images/destinacion1.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Budapest, Hungari</h5>
+                        <p class="card-text">5 ditë – Fluturim + Hotel – Nisja nga Tirana</p>
+                        <a href="paketatTuristike.html#destinacionet-preferuara" class="btn btn-primary btn-sm">Shiko më shumë</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm package-card-no-zoom">
+                    <img src="images/destinacion2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Pragë, Çeki</h5>
+                        <p class="card-text">4 ditë – Hotel 4★ – Vizita panoramike</p>
+                        <a href="paketatTuristike.html#destinacionet-preferuara" class="btn btn-primary btn-sm">Shiko më shumë</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm package-card-no-zoom">
+                    <img src="images/destinacion3.png" class="card-img-top" alt="Dubai">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Dubai, Emiratet</h5>
+                        <p class="card-text">5 ditë – Fluturim + Hotel – Safari në shkretëtirë</p>
+                        <a href="paketatTuristike.html#destinacionet-preferuara" class="btn btn-primary btn-sm">Shiko më shumë</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rreth Nesh  -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-md-6">
+                    <img src="images/kartvizit.jpg" class="img-fluid rounded shadow-sm" alt="Rreth Nesh">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="fs-3 fw-bold mb-3">RRETH NESH</h2>
+                    <p>
+                        Eren Travel Agency është partneri juaj i besueshëm për udhëtime të paharrueshme. Që nga themelimi ynë, ne kemi ofruar eksperienca unike udhëtimi, 
+                        duke kombinuar komfortin, sigurinë dhe shërbimin e shkëlqyer për çdo klient.
+                    </p>
+                    <p>
+                        Stafi ynë profesionist është gjithmonë gati t'ju ndihmojë të zgjidhni destinacionin ideal, të organizoni paketat tuaja dhe të sigurojë që çdo detaj i udhëtimit të jetë perfekt.
+                    </p>
+                    <p>
+                        Qëllimi ynë është të bëjmë çdo udhëtim një eksperiencë të paharrueshme, duke ofruar destinacione të shumta, çmime konkurruese dhe mbështetje të pandërprerë.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Perse Ne -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="mb-4 text-center fs-3">PËRSE NE?</h2>
+            <div class="row text-center g-4">
+                <div class="col-md-3">
+                    <i class="bi bi-people-fill fs-1 text-primary"></i>
+                        <h5 class="mt-2">Staf Profesionist</h5>
+                        <p>Udhëzime dhe suport gjatë gjithë udhëtimit.</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="bi bi-credit-card-2-front fs-1 text-primary"></i>
+                        <h5 class="mt-2">Shërbim i Sigurt</h5>
+                        <p>Siguri dhe lehtësi në të gjitha pagesat online.</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="bi bi-star-fill fs-1 text-primary"></i>
+                        <h5 class="mt-2">Garanci e çmimit më të mirë</h5>
+                        <p>Çmime konkurruese për çdo destinacion.</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="bi bi-globe2 fs-1 text-primary"></i>
+                        <h5 class="mt-2">Destinacione të Shumta</h5>
+                        <p>Zgjedhje të pafundme për çdo shije.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pershtypje te klienteve tane -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-4 fs-3 text-center">Përshtypje të klientëve tanë</h2>
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" style="height: 150px;">
+                    <div class="carousel-inner text-center" style="height: 100%;">
+
+                        <div class="carousel-item active py-3">
+                            <p class="fst-italic fs-5 mb-1">
+                                "Një eksperiencë fantastike nga fillimi deri në fund! Stafi ishte shumë i kujdesshëm,
+                                na ndihmuan në çdo hap të udhëtimit dhe rekomandimet e tyre ishin perfekte për atë që kërkonim.
+                                Pa dyshim do udhëtoj përsëri me Eren Travel."</p>
+                            <h6 class="fw-bold mb-0">Arbela K.</h6>
+                        </div>
+                        <div class="carousel-item py-3">
+                            <p class="fst-italic fs-5 mb-1">
+                                "Paketat kishin një kombinim super të çmimit dhe cilësisë. U surprizova nga organizimi,
+                                akomodimi dhe aktivitetet që na u ofruan. E rekomandoj 100% për këdo që kërkon pushime të rregulluara
+                                dhe pa stres."</p>
+                            <h6 class="fw-bold mb-0">Klajdi M.</h6>
+                        </div>
+                        <div class="carousel-item py-3">
+                            <p class="fst-italic fs-5 mb-1">
+                                "Gjatë gjithë udhëtimit pata suport nga ekipi, gjithçka ishte transparente dhe shumë profesionale.
+                                Ndihem shumë e kënaqur me përvojën dhe do t'i zgjedh përsëri për çdo udhëtim tjetër."</p>
+                            <h6 class="fw-bold mb-0">Erisa B.</h6>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    </div>
+                    <div class="text-center mt-4">
+                    <button class="btn btn-primary btn-sm px-3 py-2" data-bs-toggle="modal" data-bs-target="#groupMessageModal">
+                        <i class="bi bi-chat-left-text-fill me-2"></i>Mesazh nga një grup klientësh
+                    </button>
+                </div>
+        </div>
+    </section>
+
+    <!-- Mesazh nga nje grup klientesh -->
+    <div class="modal fade" id="groupMessageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" style="max-width: 800px;">
+        <div class="modal-content">
+
+        <div class="modal-body text-center p-4">
+            <img src="images/stormzy.jpg" class="img-fluid rounded mb-3" style="max-width: 100%; height: auto;" alt="...">
+            <p class="fs-5 fst-normal mb-0">"Nga gjykimi jonë ky grup ishte shumë lart"</p>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-white pt-5 pb-4 mt-5" style="background-color:#0d1b3d;" id="contact">
+    <div class="container">
+        <div class="row justify-content-center" style="max-width: 1100px;  margin: 0 auto;">
+            <div class="col-md-4 mb-4">
+                <img src="images/logo.png" class="img-fluid" style="max-width:150px; margin-top:-40px;" alt="Logo">
+                <h5 class="fw-semibold mb-1">
+                    <i class="bi bi-geo-alt-fill text-warning"></i> Lokacioni
+                </h5>
+                <p class="text-white-50 mb-1 small fw-semibold">Rruga Hoxha Tahsim, pas Optika Roma</p>
+                <p class="text-white-50 mb-1 small fw-semibold">Tiranë 1001, Albania</p>
+                <p class="text-white-50 small fw-semibold">
+                    <i class="bi bi-telephone-fill text-warning"></i> +355 68 XXX XXXX
+                </p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h5 class="fw-semibold mb-1">Orari i Punës</h5>
+                <p class="text-white-50 small fw-semibold mb-1">Monday: 8:00 - 21:00</p>
+                <p class="text-white-50 small fw-semibold mb-1">Tuesday to Friday: 9:00 - 21:00</p>
+                <p class="text-white-50 small fw-semibold mb-1">Saturday: 9:00 - 16:00</p>
+                <p class="text-white-50 small fw-semibold mb-1">Sunday: Closed</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h5 class="fw-semibold mb-1">Na kontaktoni</h5>
+                <p class="text-white-50 small fw-semibold mb-1">
+                    <i class="bi bi-telephone-fill text-warning"></i> +355 68 XXX XXXX
+                </p>
+                <p class="text-white-50 small fw-semibold mb-3">
+                    <i class="bi bi-envelope-fill text-warning"></i> erentravel1@gmail.com
+                </p>
+                <a href="https://www.instagram.com/eren__travel/" target="_blank" class="btn btn-light rounded-circle mb-3">
+                    <i class="bi bi-instagram text-danger"></i>
+                </a> 
+            </div>
+        </div>
+        <hr class="border-light">
+        <p class="text-center small mb-0">&copy; 2025 Eren Travel Agency. All rights reserved.</p>
+    </div>
+    </footer>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <script src="scripts/index.js"></script>
+
+</body>
+</html>

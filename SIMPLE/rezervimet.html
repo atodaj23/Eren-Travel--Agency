@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezervimet</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css" integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="margin-bottom: 0.1rem;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" class="brand-logo" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <!-- Paketa Turistike dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Paketa turistike</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="paketatTuristike.html#autobus">Guida me autobus</a></li>
+                            <li><a class="dropdown-item" href="paketatTuristike.html#avion">Guida me avion</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="rezervimet.html">Rezervimet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Kontakti</a>
+                    </li>
+                </ul>  
+            </div>
+        </div>
+    </nav>
+
+    <!-- Lista e Rezervimeve -->
+    <div class="container my-5">
+        <div class="text-center mb-4">
+            <h2 class="display-5">Lista e Rezervimeve</h2>
+            <p class="text-muted">Shikoni dhe menaxhoni rezervimet tuaja</p>
+            <button class="btn btn-primary btn-lg mt-3" onclick="window.location.href='paketatTuristike.html'">
+                <i class="bi bi-plus-circle me-2"></i>Bëj një rezervim të ri
+            </button>
+        </div>
+
+        <div id="reservation-list" class="row g-4">
+            <!-- Added here by JS -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-white pt-5 pb-4 mt-5" style="background-color:#0d1b3d;" id="contact">
+    <div class="container">
+        <div class="row justify-content-center" style="max-width: 1100px;  margin: 0 auto;">
+            <div class="col-md-4 mb-4">
+                <img src="images/logo.png" class="img-fluid" style="max-width:150px; margin-top:-40px;" alt="Logo">
+                <h5 class="fw-semibold mb-1">
+                    <i class="bi bi-geo-alt-fill text-warning"></i> Lokacioni
+                </h5>
+                <p class="text-white-50 mb-1 small fw-semibold">Rruga Hoxha Tahsim, pas Optika Roma</p>
+                <p class="text-white-50 mb-1 small fw-semibold">Tiranë 1001, Albania</p>
+                <p class="text-white-50 small fw-semibold">
+                    <i class="bi bi-telephone-fill text-warning"></i> +355 68 XXX XXXX
+                </p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h5 class="fw-semibold mb-1">Orari i Punës</h5>
+                <p class="text-white-50 small fw-semibold mb-1">Monday: 8:00 - 21:00</p>
+                <p class="text-white-50 small fw-semibold mb-1">Tuesday to Friday: 9:00 - 21:00</p>
+                <p class="text-white-50 small fw-semibold mb-1">Saturday: 9:00 - 16:00</p>
+                <p class="text-white-50 small fw-semibold mb-1">Sunday: Closed</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h5 class="fw-semibold mb-1">Na kontaktoni</h5>
+                <p class="text-white-50 small fw-semibold mb-1">
+                    <i class="bi bi-telephone-fill text-warning"></i> +355 68 XXX XXXX
+                </p>
+                <p class="text-white-50 small fw-semibold mb-3">
+                    <i class="bi bi-envelope-fill text-warning"></i> erentravel1@gmail.com
+                </p>
+                <a href="https://www.instagram.com/eren__travel/" target="_blank" class="btn btn-light rounded-circle mb-3">
+                    <i class="bi bi-instagram text-danger"></i>
+                </a> 
+            </div>
+        </div>
+        <hr class="border-light">
+        <p class="text-center small mb-0">&copy; 2025 Eren Travel Agency. All rights reserved.</p>
+    </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="scripts/rezervimet.js"></script>
+
+</body>
+</html>
