@@ -1,4 +1,4 @@
-// API Base URL - Change this to your API URL
+// API Base URL 
 const API_BASE_URL = 'https://localhost:7161/api';
 
 let reservations = [];
@@ -228,3 +228,4 @@ function deleteReservation(id) {
 $(document).ready(function() {
     loadReservations();
 });
+
