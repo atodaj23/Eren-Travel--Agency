@@ -1,4 +1,4 @@
-// API Base URL - Change this to your API URL
+// API Base URL
 const API_BASE_URL = 'https://localhost:7161/api';
 
 // Handle Rezervo form submission
@@ -84,7 +84,6 @@ function loadPackages() {
         .then(response => response.json())
         .then(packages => {
             console.log('Packages loaded from API:', packages);
-            // You can use this data to populate the page dynamically if needed
         })
         .catch(error => {
             console.error('Error loading packages:', error);
@@ -156,3 +155,4 @@ $(document).ready(function() {
     // Handle form submission
     $('#rezervoForm').on('submit', submitReservation);
 });
+
