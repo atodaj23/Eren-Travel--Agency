@@ -1,4 +1,4 @@
-// API Base URL - Change this to your API URL
+// API Base URL
 const API_BASE_URL = 'https://localhost:7161/api';
 
 $(document).ready(function () {
@@ -147,3 +147,4 @@ function loadStaticDestinations() {
         destinationSelect.append('<option value="' + packages[i].id + '">' + packages[i].name + '</option>');
     }
 }
+
