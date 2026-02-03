@@ -1,4 +1,4 @@
-// API Base URL
+// API Base URL 
 const API_BASE_URL = 'http://localhost:5098/api';
 
 $(document).ready(function () {
@@ -78,12 +78,12 @@ function loadDestinations() {
             
             // Add packages to dropdown
             packages.forEach(pkg => {
-                // Create a simple ID from the package name
-                const pkgId = createPackageId(pkg.name);
+                const pkgId = createPackageId(pkg.paketa);
                 destinationSelect.append(
-                    `<option value="${pkgId}">${pkg.name}</option>`
+                    `<option value="${pkgId}">${pkg.paketa}</option>`
                 );
             });
+
         })
         .catch(error => {
             console.error('Error loading destinations:', error);
@@ -94,7 +94,6 @@ function loadDestinations() {
 
 // Create a simple ID from package name
 function createPackageId(name) {
-    // Extract first word and convert to lowercase
     const firstWord = name.split(' ')[0].toLowerCase();
     
     // Map of package names to IDs (for consistency with existing anchors)
@@ -147,5 +146,3 @@ function loadStaticDestinations() {
         destinationSelect.append('<option value="' + packages[i].id + '">' + packages[i].name + '</option>');
     }
 }
-
-
