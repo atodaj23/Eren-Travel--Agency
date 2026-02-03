@@ -1,5 +1,5 @@
 // API Base URL
-const API_BASE_URL = 'https://localhost:7161/api';
+const API_BASE_URL = 'http://localhost:5098/api';
 
 // Handle Rezervo form submission
 function submitReservation(event) {
@@ -155,4 +155,5 @@ $(document).ready(function() {
     // Handle form submission
     $('#rezervoForm').on('submit', submitReservation);
 });
+
 
